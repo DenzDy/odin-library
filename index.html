@@ -8,12 +8,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@400;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <script src="script.js"></script>    
     <title>Document</title>
 </head>
 <body>
+    <div class="blur-container inactive"></div>
     <header>
         <h1>Library</h1>
     </header>
+    <main>
+        <div class="add-book-button-container">
+            <button id="add-book">+ Add Book</button>
+        </div>
+        <div id="grid-container">
+            
+        </div>
+        <div class="add-book-container inactive">
+            <p>Add new book</p>
+            <form action="">
+                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="number" name="pages" id="pages" placeholder="Pages" min="1">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="readYet" id="readYet">
+                    <label for="readYet">Have you read it?</label>
+                </div>
+                <input type="button" value="Submit" id="submit-button">
+            </form>
+        </div>
+        
+    </main>
 </body>
 </html>
