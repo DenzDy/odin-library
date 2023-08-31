@@ -22,17 +22,10 @@
             <button id="add-book" onclick="onclick_add_book()">+ Add Book</button>
         </div>
         <div id="grid-container">
-            <div class="grid-item">
-                <p>"asd"</p>
-                <p>asd</p>
-                <p>1 pages</p>
-                <button id="read-button" class="read">Read</button>
-                <button id="remove-button">Remove</button>
-            </div>
         </div>
         <div class="add-book-container inactive" id="add-book-container">
             <p>Add new book</p>
-            <form action="">
+            <form action="" id="form">
                 <input type="text" name="title" id="title" placeholder="Title">
                 <input type="text" name="author" id="author" placeholder="Author">
                 <input type="number" name="pages" id="pages" placeholder="Pages" min="1">
@@ -40,7 +33,7 @@
                     <input type="checkbox" name="readYet" id="readYet">
                     <label for="readYet">Have you read it?</label>
                 </div>
-                <input type="button" value="Submit" id="submit-button" onclick="addBookToLibrary()">
+                <input type="submit" value="Submit" id="submit-button">
             </form>
         </div>
         
